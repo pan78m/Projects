@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/margin_5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:id="@+id/l0"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:layout_marginRight="@dimen/margin_5dp"
+        android:layout_marginLeft="@dimen/margin_5dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="0.166"
+            android:textAlignment="center"
+            android:id="@+id/txt_teachername_listdoros_id"
+            android:layout_width="0dp"
+            android:textColor="@color/green_color_Dark"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_weight="0.166"
+            android:id="@+id/txt_examdate_listdoros_id"
+            android:textColor="@color/red_color"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/txt_classtime_listdoros_id"
+            android:textColor="@color/black_color"
+            android:layout_weight="0.249"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/txt_vahed_listdoros_id"
+            android:textColor="@color/black_color"
+            android:layout_weight="0.083"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/txt_lessonname_listdoros_id"
+            android:textColor="@color/black_color"
+            android:layout_weight="0.249"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/txt_lessonid_listdoros_id"
+            android:textColor="@color/black_color"
+            android:layout_weight="0.083"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="@dimen/margin_5dp"
+        android:layout_marginRight="@dimen/margin_5dp"
+        android:layout_below="@id/l0"
+        android:background="#68000000" />
+</RelativeLayout>

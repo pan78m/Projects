@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Other_Activitys.LoginActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:src="@drawable/logo_login"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img_logo_id"
+        android:layout_width="80dp"
+        android:contentDescription="@string/my_photo"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/txt_content"
+        android:layout_below="@id/img_logo_id"
+        android:layout_marginTop="5dp"
+        android:text="@string/content"
+        android:textAlignment="center"
+        android:textColor="@color/white_color"
+        android:fontFamily="@font/titr"
+        android:textSize="20sp"
+        android:layout_marginBottom="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/portal_id"
+        android:textAlignment="center"
+        android:textColor="@color/white_color"
+        android:fontFamily="@font/kodak"
+        android:textSize="16sp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/portal_amozeshi"
+        android:layout_below="@id/txt_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@drawable/login_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txt_studenum_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/shomare_daneshjooii"
+                android:fontFamily="@font/kodak"
+                android:textAlignment="center"
+                android:textColor="#023653"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txt_stdcode_id"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/background_edit_text"
+                android:hint="@string/prompt_email"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/white_color"
+                tools:ignore="TextFields" />
+
+            <TextView
+                android:id="@+id/txt_stu_pass_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/pass"
+                android:fontFamily="@font/kodak"
+                android:textAlignment="center"
+                android:textColor="#023653"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txt_stdpass_id"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/background_edit_text"
+                android:hint="@string/prompt_password"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/white_color"
+                />
+
+            <Button
+                android:id="@+id/btn_sign_in_id"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorAccent"
+                android:text="@string/log_in"
+                android:elevation="@dimen/elevation_8dp"
+                android:fontFamily="@font/kodak"
+                android:textSize="20sp"
+                tools:ignore="ButtonStyle"
+                android:textColor="@color/white_color"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

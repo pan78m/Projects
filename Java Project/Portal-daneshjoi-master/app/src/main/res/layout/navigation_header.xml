@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="@dimen/padding_15dp"
+    android:gravity="bottom"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:layout_height="230dp"
+    android:background="@drawable/mohandesi">
+
+    <ImageView
+        android:id="@+id/profile_id"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/profile_back"
+        android:contentDescription="@string/my_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/picture" />
+
+    <TextView
+        android:fontFamily="@font/titr"
+        android:textColor="#880E4F"
+        android:textSize="@dimen/textsize_26sp"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:id="@+id/user_name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+         />
+
+    <TextView
+        android:id="@+id/student_num_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/titr"
+        android:textColor="#000"
+        android:textSize="@dimen/textsize_18sp"
+         />
+</LinearLayout>

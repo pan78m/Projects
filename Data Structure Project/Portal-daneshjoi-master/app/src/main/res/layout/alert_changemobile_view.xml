@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/margin_15dp"
+        android:id="@+id/txtinput_mobilejadid_id"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:id="@+id/mobile_jadid_idnew"
+            android:textSize="@dimen/textsize_18sp"
+            android:background="@drawable/background_edit_text"
+            android:padding="@dimen/padding_8dp"
+            android:hint="@string/shomarejadid"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:layout_margin="@dimen/margin_15dp"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

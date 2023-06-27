@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_activities"
+    tools:context=".Activity.Omor_mali_activities.Vaziate_mali">
+
+    <android.support.v7.widget.Toolbar
+        android:elevation="@dimen/elevation_5dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar_vaziat_id"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <Spinner
+        android:layout_margin="@dimen/margin_10dp"
+        android:textAlignment="center"
+        android:layout_below="@id/toolbar_vaziat_id"
+        android:id="@+id/spn_nimsaltahsili_vaziat_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/DropSpinner"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/spn_nimsaltahsili_vaziat_id"
+        android:layout_margin="@dimen/margin_10dp">
+
+        <TableLayout
+            android:id="@+id/table_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/margin_10dp"
+            android:background="@drawable/back_1">
+
+            <TableRow
+                android:id="@+id/row0_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5dp"
+                android:padding="@dimen/padding_5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/bestankar"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/bedehkar"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/shomarehesabjari"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tarikhfish"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/shomarefish"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/itemmali"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginBottom="@dimen/margin_15dp"
+                android:background="@color/red_color" />
+
+            <ListView
+                android:id="@+id/list_vaziat_id"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="@dimen/margin_10dp"
+                android:layout_marginVertical="@dimen/margin_5dp"
+                android:dividerHeight="@dimen/dividerHeight_3dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginBottom="@dimen/margin_15dp"
+                android:background="@color/red_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/margin_5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:id="@+id/txt_jamekol_id"
+                    android:text="@string/jamekol"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/textsize_18sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:id="@+id/txt_sumofbestankar_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/txt_jamekol_id"
+                    android:layout_marginStart="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/test01"
+                    android:textColor="@color/green_color"
+                    android:textSize="@dimen/textsize_18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_sumofbedehkar_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/txt_jamekol_id"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toEndOf="@+id/txt_sumofbestankar_id"
+                    android:layout_toRightOf="@+id/txt_sumofbestankar_id"
+                    android:text="@string/test02"
+                    android:textColor="@color/red_color"
+                    android:textSize="@dimen/textsize_18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:text="@string/vaziatekol"
+                    android:layout_below="@id/txt_jamekol_id"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold"
+                    android:id="@+id/vaziatekol"
+                    android:textSize="@dimen/textsize_20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:text="@string/showvaziatekol"
+                    android:layout_alignTop="@id/vaziatekol"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:textColor="@color/green_color"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textsize_18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/margin_20dp" />
+            </RelativeLayout>
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>
+
+

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_activities"
+    tools:context=".Activity.Omor_amozeshi_activities.ZamanBandi">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_zamanbandi_id"
+        android:elevation="@dimen/elevation_5dp"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+    
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="@dimen/cardelevation_3dp"
+        app:cardCornerRadius="@dimen/cardelevation_3dp"
+        android:layout_below="@id/toolbar_zamanbandi_id"
+        android:layout_margin="@dimen/margin_5dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/linier"
+                android:weightSum="1"
+                android:background="@color/gray_color"
+                android:layout_margin="@dimen/margin_5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="@string/controlmoadel"
+                    android:textColor="@color/black_color"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:text="@string/time"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black_color"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:text="@string/sallvorod"
+                    android:layout_weight="0.2"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black_color"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:textAlignment="center"
+                    android:text="@string/enddate"
+                    android:textStyle="bold"
+                    android:textColor="@color/black_color"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:text="@string/startdate"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black_color"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/view_uup"
+                android:layout_margin="@dimen/margin_5dp"
+                android:layout_below="@id/linier"
+                android:background="@color/red_color" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:layout_marginBottom="@dimen/margin_5dp"
+                android:layout_width="match_parent"
+                android:id="@+id/recycler_zamanbandi_id"
+                android:layout_below="@id/view_uup"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

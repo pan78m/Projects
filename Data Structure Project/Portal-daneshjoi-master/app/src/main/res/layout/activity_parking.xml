@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_activities"
+    tools:context=".Activity.Darkhast_daneshjoii_activities.Parking">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_parking_id"
+        android:elevation="@dimen/elevation_5dp"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+</RelativeLayout>

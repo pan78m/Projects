@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Splash.Splash"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/img_logo_tnb_id"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:src="@drawable/iau_logo"
+        android:contentDescription="@string/tnb_logo"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_logo_tnb_id"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/txt_welcome_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_logo_tnb_id"
+        android:layout_marginTop="@dimen/margin_50dp"
+        android:text="@string/txt_p"
+        android:textAlignment="center"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/txt_welcome_size28sp" />
+
+    <TextView
+        android:id="@+id/txt_version_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_welcome_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_50dp"
+        android:text="@string/_1_1_0"
+        android:textAlignment="center"
+        android:textColor="@color/version_color" />
+
+    <TextView
+        android:id="@+id/txt_bottom_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/tnb_club"
+        android:textAlignment="center"
+        android:textColor="@color/tnb_name_color"
+        android:textSize="@dimen/textsize_18sp" />
+
+
+
+</RelativeLayout>

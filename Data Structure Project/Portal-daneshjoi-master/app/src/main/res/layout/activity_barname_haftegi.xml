@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background_activities"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Omor_amozeshi_activities.BarnameHaftegi">
+
+    <android.support.v7.widget.Toolbar
+        android:elevation="@dimen/elevation_5dp"
+        android:id="@+id/toolbar_barnamehaftegi_id"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <Spinner
+        android:layout_margin="@dimen/margin_10dp"
+        android:textAlignment="center"
+        android:layout_below="@id/toolbar_barnamehaftegi_id"
+        android:id="@+id/spn_nimsaltahsili_barnamehaftegi_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/DropSpinner"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/margin_5dp"
+            android:layout_below="@id/spn_nimsaltahsili_barnamehaftegi_id"
+            app:cardElevation="@dimen/cardelevation_3dp"
+            app:cardCornerRadius="@dimen/cardelevation_3dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:id="@+id/table_layout_id"
+                    android:background="@color/gray_color"
+                    android:weightSum="1"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/black_color"
+                        android:text="@string/techer"
+                        android:layout_weight="0.166"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/black_color"
+                        android:text="@string/examdate"
+                        android:layout_weight="0.166"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/black_color"
+                        android:text="@string/classtime"
+                        android:layout_weight="0.332"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/black_color"
+                        android:text="@string/vahed_amali"
+                        android:layout_weight="0.083"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/black_color"
+                        android:text="@string/vahed_nazari"
+                        android:layout_weight="0.083"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/black_color"
+                        android:text="@string/lessonname"
+                        android:layout_weight="0.166"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:id="@+id/view_uup"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:layout_below="@id/table_layout_id"
+                    android:background="@color/red_color" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/view_uup"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:id="@+id/recycler_barnamehaftegi_id"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+</RelativeLayout>

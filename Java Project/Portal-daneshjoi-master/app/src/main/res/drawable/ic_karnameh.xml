@@ -1,0 +1,18 @@
+<vector android:autoMirrored="true" android:height="56dp"
+    android:viewportHeight="100" android:viewportWidth="86.571"
+    android:width="56dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#FF000000" android:pathData="M47.682,20.833l0,5.556l33.334,0l0,68.055l-50,0l0,-55.46l-5.557,-2.138l0,57.598l0,5.556l55.557,0l5.555,0l0,-73.611l0,-5.556z"/>
+    <path android:fillColor="#FF000000" android:pathData="M43.516,29.212l0,-10.401l-12.5,4.809l-12.5,-4.809l0,10.401l12.5,4.81z"/>
+    <path android:fillColor="#FF000000" android:pathData="M9.944,12.72l-0.002,0.001l-1.365,-0.524l-0.024,-0.012l-0.009,0.017l-8.544,14.988l3.932,1.522l6.25,-11.014l0,13.396l4.167,1.612l0,-18.29l-4.388,-1.688z"/>
+    <path android:fillColor="#FF000000" android:pathData="M31.016,20.833l27.083,-10.416l-27.083,-10.417l-27.084,10.417l4.633,1.76l16.647,-6.426l5.804,2.232l-16.645,6.427z"/>
+    <path android:fillColor="#FF000000" android:pathData="M36.571,38.889h25v2.777h-25z"/>
+    <path android:fillColor="#FF000000" android:pathData="M36.571,50h25v2.777h-25z"/>
+    <path android:fillColor="#FF000000" android:pathData="M36.571,61.11h25v2.779h-25z"/>
+    <path android:fillColor="#FF000000" android:pathData="M36.571,72.223h25v2.777h-25z"/>
+    <path android:fillColor="#FF000000" android:pathData="M36.571,83.333h25v2.777h-25z"/>
+    <path android:fillColor="#FF000000" android:pathData="M69.904,36.111l0,2.778l-2.778,0l0,2.778l2.778,0l0,2.777l2.778,0l0,-2.777l2.777,0l0,-2.778l-2.777,0l0,-2.778z"/>
+    <path android:fillColor="#FF000000" android:pathData="M67.126,50h8.333v2.777h-8.333z"/>
+    <path android:fillColor="#FF000000" android:pathData="M67.126,63.89l2.778,0l0,2.777l2.778,0l0,-2.777l2.777,0l0,-2.78l-2.777,0l0,-2.777l-2.778,0l0,2.777l-2.778,0z"/>
+    <path android:fillColor="#FF000000" android:pathData="M67.126,72.223h8.333v2.777h-8.333z"/>
+    <path android:fillColor="#FF000000" android:pathData="M67.126,86.11l2.778,0l0,2.78l2.778,0l0,-2.78l2.777,0l0,-2.777l-2.777,0l0,-2.777l-2.778,0l0,2.777l-2.778,0z"/>
+</vector>

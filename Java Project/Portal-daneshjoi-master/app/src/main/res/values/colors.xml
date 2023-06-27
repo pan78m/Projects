@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0288D1</color>
+    <color name="colorPrimaryDark">#01579B</color>
+    <color name="colorAccent">#E09403</color>
+    <color name="white_color">#ffffff</color>
+    <color name="black_color">#000000</color>
+    <color name="purple_color">#9d22da</color>
+    <color name="background_activities">#B7AFD2E7</color>
+    <color name="red_color">#C70000</color>
+    <color name="green_color_Dark">#4D7448</color>
+    <color name="green_color">#2EAC33</color>
+    <color name="version_color">#770000</color>
+    <color name="tnb_name_color">#000077</color>
+    <color name="gray_color">#CEBEBCBC</color>
+</resources>

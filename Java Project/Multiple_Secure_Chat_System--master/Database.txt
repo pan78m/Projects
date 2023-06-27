@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS chat CHARACTER SET utf8 ; 
+use chat;
+CREATE TABLE `users` (
+  `cid` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `pass` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`cid`,`name`)
+  );
+CREATE TABLE `message` (
+  `cid` int(11) NOT NULL,
+  `msg` varchar(500) DEFAULT NULL,
+  FOREIGN KEY (`cid`) REFERENCES `users` (`cid`) ON DELETE CASCADE
+  );

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_activities"
+    tools:context=".Activity.Darkhast_daneshjoii_activities.Eshteghal">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_eshteghal_id"
+        android:elevation="@dimen/elevation_5dp"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="@dimen/cardelevation_3dp"
+        android:layout_below="@id/toolbar_eshteghal_id"
+        android:layout_margin="@dimen/margin_10dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/txtinput_jahateeraee_id"
+                android:layout_margin="@dimen/margin_15dp"
+                android:layout_height="wrap_content" >
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/edittxt_jahateeraee_id"
+                    android:background="@drawable/background_edit_text"
+                    android:padding="@dimen/margin_10dp"
+                    android:textAlignment="center"
+                    android:hint="@string/jahateeraee"
+                    android:layout_margin="@dimen/margin_15dp"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/txtinput_elatedarkhast"
+                android:layout_below="@id/txtinput_jahateeraee_id"
+                android:layout_margin="@dimen/margin_15dp"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/edittxt_elatedarkhast_id"
+                    android:textAlignment="center"
+                    android:maxLines="3"
+                    android:padding="@dimen/margin_10dp"
+                    android:background="@drawable/background_edit_text"
+                    android:hint="@string/elatedarkhast"
+                    android:layout_margin="@dimen/margin_15dp"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                tools:ignore="ButtonStyle"
+                android:id="@+id/btn_submitreq_id"
+                android:layout_below="@id/txtinput_elatedarkhast"
+                android:layout_margin="@dimen/margin_15dp"
+                android:background="@color/green_color"
+                android:text="@string/submitreq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

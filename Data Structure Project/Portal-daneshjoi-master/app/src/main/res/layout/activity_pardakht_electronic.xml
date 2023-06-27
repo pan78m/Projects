@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_activities"
+    tools:context=".Activity.Omor_mali_activities.Pardakht_electronic">
+
+    <android.support.v7.widget.Toolbar
+        android:elevation="@dimen/elevation_5dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar_pardakht_e_id"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar_pardakht_e_id"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="@dimen/margin_10dp"
+            android:layout_width="match_parent"
+            app:cardElevation="@dimen/cardelevation_3dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/textsize_18sp"
+                    android:textColor="@color/black_color"
+                    android:padding="@dimen/padding_8dp"
+                    android:id="@+id/txt_items_id"
+                    android:text="@string/shetab_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:padding="@dimen/padding_8dp"
+                    android:textSize="@dimen/textsize_20sp"
+                    android:textColor="@color/black_color"
+                    android:id="@+id/txt_bank_name_id"
+                    android:text="@string/bank_names"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="@dimen/textsize_26sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:textColor="@color/black_color"
+                    android:text="@string/mablagh"
+                    android:id="@+id/txt_mablagh_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:hint="@string/hint"
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:id="@+id/mablaghe_pardakhti_id"
+                    android:inputType="number"
+                    android:textColor="@color/white_color"
+                    android:textAlignment="center"
+                    android:background="@drawable/background_edit_text"
+                    android:layout_height="45dp"
+                    android:layout_margin="@dimen/margin_20dp"/>
+
+                <ImageButton
+                    android:id="@+id/btn_dargah_pardakht_id"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:elevation="@dimen/cardelevation_3dp"
+                    tools:ignore="ButtonStyle"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_bmi" />
+
+                <TextView
+                    android:id="@+id/txt_tozih_id"
+                    android:padding="@dimen/padding_8dp"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/textsize_18sp"
+                    android:text="@string/tozih"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+</RelativeLayout>

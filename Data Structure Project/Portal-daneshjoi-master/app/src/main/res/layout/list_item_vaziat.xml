@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="end"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:weightSum="1">
+
+    <TextView
+        android:textColor="@color/green_color_Dark"
+        android:textAlignment="center"
+        android:id="@+id/txt_bestankar_id"
+        android:layout_weight="0.166666"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/red_color"
+        android:textAlignment="center"
+        android:id="@+id/txt_bedehkar_id"
+        android:layout_weight="0.166666"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:layout_weight="0.166666"
+        android:id="@+id/txt_hesabejari_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:layout_weight="0.166666"
+        android:id="@+id/txt_tarikhfish_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_weight="0.166666"
+        android:textAlignment="center"
+        android:id="@+id/txt_shomarefish_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:layout_weight="0.166666"
+        android:id="@+id/txt_itemmali_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

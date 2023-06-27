@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <TextView
+            android:layout_above="@id/inputlayout_moshakhase_id"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/margin_50dp"
+            android:text="@string/view_moshakhase"
+            android:textAlignment="center"
+            android:textColor="@color/black_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/textsize_20sp"
+
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/inputlayout_moshakhase_id"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:id="@+id/Etxt_moshakhase_dars_id"
+                android:hint="@string/hint_moshakhase"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:textColor="@color/white_color"
+                android:background="@drawable/background_edit_text"
+                android:layout_margin="@dimen/margin_20dp"
+                android:padding="@dimen/padding_10dp"
+                android:layout_height="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_sabt_moshakhase_id"
+            android:layout_below="@id/inputlayout_moshakhase_id"
+            android:layout_margin="@dimen/margin_50dp"
+            android:background="#C1FC80"
+            android:layout_width="match_parent"
+            android:text="@string/ss"
+            android:textStyle="bold"
+            android:elevation="@dimen/cardelevation_3dp"
+            tools:ignore="ButtonStyle"
+            android:textSize="@dimen/textsize_18sp"
+            android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="@string/person_info"
+            android:id="@+id/person_info_id"
+            android:icon="@drawable/ic_info_black_24dp"/>
+
+        <item
+            android:title="@string/email"
+            android:id="@+id/mail_id"
+            android:icon="@drawable/ic_mail_black_24dp"/>
+
+        <item
+            android:title="@string/parvande"
+            android:id="@+id/parvande_id"
+            android:icon="@drawable/ic_account_balance_wallet_black_24dp"/>
+
+        <item
+            android:title="@string/vaziate_tahsili"
+            android:id="@+id/kholase_vaze_tahsili_id"
+            android:icon="@drawable/ic_format_list_bulleted_black_24dp"/>
+    </group>
+
+    <item android:title="@string/subheader">
+        <menu >
+
+            <item
+                android:title="@string/map"
+                android:id="@+id/map_id"
+                android:icon="@drawable/ic_map_black_24dp"/>
+
+            <item
+                android:title="@string/phone"
+                android:id="@+id/phone_id"
+                android:icon="@drawable/ic_phonelink_setup_black_24dp"/>
+
+            <item
+                android:title="@string/exit"
+                android:id="@+id/exit_id"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"/>
+        </menu>
+    </item>
+</menu>
